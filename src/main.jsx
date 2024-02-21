@@ -1,10 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import logo from '../src/assets/react.svg' 
+function Header() {
+  return(
+    <div>
+        <img src={logo} width={60} height={60} /> 
+        <div className='flex bg--slate-200 p-2 w-full items-center'>
+          
+            <input type='text' className='bg-transparent outline-none'/>
+        </div> 
+        <div>
+          </div>    
+    </div>  
 )
+}
